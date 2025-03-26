@@ -3,10 +3,10 @@ annotations:
 apiVersion: v2
 dependencies:
 - name: common
-  repository: https://charts.bitnami.com/bitnami
+  repository: oci://trialoppsko.jfrog.io/app01
   tags:
   - bitnami-common
-  version: 1.x.x
+  version: 0.1.0
 description: A helm chart for deploying Python web and backend applications
 home: https://www.leadbook.com
 maintainers:
