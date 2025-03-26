@@ -108,15 +108,15 @@ app:
 
 # extra resources to create
 # see https://github.com/bitnami/charts/blob/master/bitnami/kafka/README.md#deploying-extra-resources
-  extraDeploy: []
+    extraDeploy: []
 
 # configure the service if any
 # type: ClusterIP, NodePort, LoadBalancer
-  service:
-    enabled: true
+    service:
+      enabled: true
 
-    type: ClusterIP
-    port: 80
+      type: ClusterIP
+      port: 80
 
   # nodePort: 30000
 
@@ -125,8 +125,8 @@ app:
   # externalTrafficPolicy: Cluster
 
 # add this if LoadBalancer service is enabled
-  ingress:
-    enabled: false
+    ingress:
+      enabled: false
 
     hosts:
       - name: app.leadbook.com
