@@ -19,8 +19,8 @@ components:
   - name: main
 
     image:
-      registry: oci://trialoppsko.jfrog.io
-      repository: app01
+      registry: docker.io
+      repository: jabzta84/flaskapp
       tag: latestv4
 
       pullPolicy: IfNotPresent
