@@ -55,21 +55,21 @@ app:
         runAsNonRoot: true
         fsGroup: 1000
 
-    containerSecurityContext:
-      enabled: true
-      runAsUser: 1000
-      runAsNonRoot: true
-      readOnlyRootFilesystem: false
-      allowPrivilegeEscalation: false
+      containerSecurityContext:
+        enabled: true
+        runAsUser: 1000
+        runAsNonRoot: true
+        readOnlyRootFilesystem: false
+        allowPrivilegeEscalation: false
 
     # various settings to manage pod allocation and priorities
-    affinity: {}
-    podAffinityPreset: ""
-    podAntiAffinityPreset: soft
-    nodeAffinityPreset:
-      type: ""
-      key: ""
-      values: []
+      affinity: {}
+      podAffinityPreset: ""
+      podAntiAffinityPreset: soft
+      nodeAffinityPreset:
+        type: ""
+        key: ""
+        values: []
 
     nodeSelector: {}
     tolerations: []
