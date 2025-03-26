@@ -1,59 +1,59 @@
 app:
-global:
-  imageRegistry:
-  imagePullSecrets: []
+  global:
+    imageRegistry:
+    imagePullSecrets: []
 
-nameOverride:
-fullnameOverride:
+  nameOverride:
+  fullnameOverride:
 
-commonLabels: {}
-commonAnnotations: {}
+  commonLabels: {}
+  commonAnnotations: {}
 
 # create config maps and secrets as part of the release
-config: {}
-existingSecrets: {}
+  config: {}
+  existingSecrets: {}
 
 # all components of the release (create one deployment for each)
 # the first component is the main component
 # if the app is a service, the main component is the server component
-components:
-  - name: main
+  components:
+    - name: main
 
-    image:
-      registry: docker.io
-      repository: jabzta84/flaskapp
-      tag: latestv4
+      image:
+        registry: docker.io
+        repository: jabzta84/flaskapp
+        tag: latestv4
 
-      pullPolicy: IfNotPresent
-      pullSecrets: []
+        pullPolicy: IfNotPresent
+        pullSecrets: []
 
-    replicaCount: 2
+      replicaCount: 2
 
-    updateStrategy:
-      type: RollingUpdate
+      updateStrategy:
+        type: RollingUpdate
 
-    podLabels: {}
-    podAnnotations: {}
+      podLabels: {}
+      podAnnotations: {}
 
-    command: []
-    args: []
+      command: []
+      args: []
 
-    ports:
-      - name: http
-        containerPort: 80
+      ports:
+        - name: http
+          containerPort: 80
 
     # set environment variables directly or from config maps or secrets
-    extraEnvVars: []
-    extraEnvVarsCM:
-    extraEnvVarsSecret:
+      extraEnvVars: []
+      extraEnvVarsCM:
+      extraEnvVarsSecret:
 
-    lifecycleHooks: {}
+      lifecycleHooks: {}
 
-    podSecurityContext:
-      enabled: true
-      runAsUser: 1000
-      runAsNonRoot: true
-      fsGroup: 1000
+      podSecurityContext:
+        enabled: true
+        runAsUser: 1000
+        runAsNonRoot: true
+        fsGroup: 1000
 
     containerSecurityContext:
       enabled: true
