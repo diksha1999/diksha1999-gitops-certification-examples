@@ -2,7 +2,7 @@ annotations:
   category: ApplicationServer
 apiVersion: v2
 dependencies:
-- name: common
+- name: app
   repository: oci://trialoppsko.jfrog.io/app01/app
   tags:
   - bitnami-common
