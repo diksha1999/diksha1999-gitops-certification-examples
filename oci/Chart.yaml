@@ -1,0 +1,18 @@
+annotations:
+  category: ApplicationServer
+apiVersion: v2
+dependencies:
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  tags:
+  - bitnami-common
+  version: 1.x.x
+description: A helm chart for deploying Python web and backend applications
+home: https://www.leadbook.com
+maintainers:
+- email: cto@leadbook.com
+  name: Leadbook
+name: app
+sources:
+- https://github.com/VentesWorks/
+version: 0.1.0
