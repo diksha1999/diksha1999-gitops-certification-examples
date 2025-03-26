@@ -27,7 +27,7 @@ app:
         pullPolicy: IfNotPresent
         pullSecrets: []
 
-      replicaCount: 1
+      replicaCount: 2
 
       updateStrategy:
         type: RollingUpdate
