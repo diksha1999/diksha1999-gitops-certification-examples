@@ -3,7 +3,7 @@ annotations:
 apiVersion: v2
 dependencies:
 - name: app
-  repository: oci://trialoppsko.jfrog.io/app01/app
+  repository: oci://trialoppsko.jfrog.io/app01
   tags:
   - bitnami-common
   version: 0.1.0
